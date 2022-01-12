@@ -94,6 +94,22 @@ public class User {
     public void setAddress2(String address2) {
         this.address2 = address2;
     }
+    public String validation(){
+        if(userName == null)
+            return "username";
+        else if(firstName == null)
+            return "firstname";
+        else if(lastName == null)
+            return "lastname";
+        else if(mobileNumber==null)
+            return "mobilenumber";
+        else if(emailID == null)
+            return "emailID";
+        else if(address1 == null)
+            return "address1";
+        else
+            return "completed";
+    }
 
 
 
